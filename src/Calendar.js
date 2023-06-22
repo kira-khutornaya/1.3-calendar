@@ -39,7 +39,10 @@ function Calendar({ date }) {
       </div>
       <div className="ui-datepicker-header">
         <div className="ui-datepicker-title">
-          <span className="ui-datepicker-month">{capFirst(format(date, 'LLLL', { locale: ru }))}</span>
+          <span className="ui-datepicker-month">
+            {capFirst(format(date, 'LLLL', { locale: ru }))}
+            {' '}
+          </span>
           <span className="ui-datepicker-year">{format(date, 'yyyy')}</span>
         </div>
       </div>
